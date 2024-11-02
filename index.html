@@ -8,25 +8,29 @@
     <link rel="stylesheet" href="assets/styles/index.css" />
   </head>
   <body class="page__body">
-    <figure class="profile">
-      <img
-        class="image"
-        src="assets/images/avatar.jpg"
-        width="300"
-        height="400"
-        alt="Harutyun Karapetyan"
-      />
-      <figcaption class="profile__content">
+    <main class="main">
+      <div class="main__wrapper wrapper">
+        <img
+          class="image"
+          src="assets/images/avatar.jpg"
+          width="300"
+          height="400"
+          alt="Harutyun Karapetyan"
+        />
         <h1 class="text text_size_extra-large text_type_title">
           Harutyun Karapetyan
         </h1>
-        <p class="text">
+        <p class="main__text text">
           I’m a front-end developer <span aria-hidden="true">👨‍💻</span>, focused
           on digital accessibility and creating seamless web interfaces
           <span aria-hidden="true">🌐</span>
         </p>
-        <hr class="profile__separator" />
-        <h2 class="text text_size_extra-large text_type_title">
+      </div>
+    </main>
+
+    <section class="section">
+      <div class="wrapper">
+        <h2 class="section__title text text_size_extra-large text_type_title">
           Work experience
         </h2>
         <ul class="list">
@@ -42,7 +46,7 @@
               implementing level A and AA accessibility criteria for the testing
               team. I place a strong emphasis on ensuring web accessibility
             </p>
-            <time class="profile__time text">August 2022 — Present</time>
+            <time class="text">August 2022 — Present</time>
           </li>
           <li class="list__item">
             <h3 class="text text_size_large text_type_title">53xapps</h3>
@@ -53,7 +57,7 @@
               Gulp, and Advanced Custom Fields (ACF), including support for
               multilingual functionality
             </p>
-            <time class="profile__time text">May 2021 — July 2022</time>
+            <time class="text">May 2021 — July 2022</time>
           </li>
           <li class="list__item">
             <h3 class="text text_size_large text_type_title">Ichien</h3>
@@ -63,11 +67,16 @@
               and Tilda with the integration of my own scripts. The main focus
               was on working with clean HTML, CSS, and JavaScript
             </p>
-            <time class="profile__time text">February 2019 — April 2021</time>
+            <time class="text">February 2019 — April 2021</time>
           </li>
         </ul>
-        <hr class="profile__separator" />
-        <ul class="profile__social social">
+      </div>
+    </section>
+
+    <section class="page__footer section">
+      <div class="wrapper">
+        <h2 class="section__title text text_size_extra-large text_type_title">Social networks</h2>
+        <ul class="social">
           <li class="social__item">
             <a
               class="social__link"
@@ -109,7 +118,7 @@
             </a>
           </li>
         </ul>
-      </figcaption>
-    </figure>
+      </div>
+    </footer>
   </body>
 </html>

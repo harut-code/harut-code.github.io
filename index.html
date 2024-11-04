@@ -8,109 +8,149 @@
     <link rel="stylesheet" href="assets/styles/index.css" />
   </head>
   <body class="page__body">
-    <main class="main">
-      <div class="main__wrapper wrapper">
-        <img
-          class="image"
-          src="assets/images/avatar.jpg"
-          width="300"
-          height="400"
-          alt="Harutyun Karapetyan"
-        />
-        <h1 class="text text_size_extra-large text_type_title">
-          Harutyun Karapetyan
-        </h1>
-        <p class="main__text text">
+    <header class="page__header header">
+      <h1 class="header__title text text_size_xl">Harutyun Karapetyan</h1>
+      <p class="header__text text">
+        Frontend-developer with 5 years of experience
+      </p>
+      <img
+        class="header__avatar image"
+        src="assets/images/avatar.jpg"
+        width="150"
+        height="150"
+        aria-hidden="true"
+        alt=""
+      />
+    </header>
+
+    <aside class="sidebar">
+      <section class="section" aria-labelledby="contacts">
+        <h2 id="contacts" class="text text_size_lg">Contacts</h2>
+        <ul class="list">
+          <li class="list__item">
+            <a
+              class="link"
+              href="https://github.com/harut-code"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Github</a
+            >
+          </li>
+          <li class="list__item">
+            <a
+              class="link"
+              href="https://x.com/harut_code"
+              rel="noopener noreferrer"
+              target="_blank"
+              >X</a
+            >
+          </li>
+          <li class="list__item">
+            <a
+              class="link"
+              href="https://t.me/harut_code"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Telegram</a
+            >
+          </li>
+          <li class="list__item">
+            <a
+              class="link"
+              href="mailto:harut.code@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="skills">
+        <h2 id="skills" class="text text_size_lg">Skills</h2>
+        <ul class="list">
+          <li class="list__item">
+            <p class="text">HTML / CSS / JS / Node.js</p>
+          </li>
+          <li class="list__item">
+            <p class="text">React / Redux / TypeScript</p>
+          </li>
+          <li class="list__item">
+            <p class="text">Figma / Design system / UI Kit</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="languages">
+        <h2 id="languages" class="text text_size_lg">Languages</h2>
+        <ul class="list">
+          <li class="list__item">
+            <p class="text">Armenian (Native)</p>
+          </li>
+          <li class="list__item">
+            <p class="text">Russian (C2)</p>
+          </li>
+          <li class="list__item">
+            <p class="text">English (B1)</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="location">
+        <h2 id="location" class="text text_size_lg">Location</h2>
+        <ul class="list">
+          <li class="list__item">
+            <p class="text">Armenia, Yerevan</p>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="page__main main">
+      <div class="box">
+        <h2 class="main__title text text_size_lg">About me</h2>
+        <p class="text">
           I’m a front-end developer <span aria-hidden="true">👨‍💻</span>, focused
           on digital accessibility and creating seamless web interfaces
           <span aria-hidden="true">🌐</span>
         </p>
       </div>
+      <h2 class="main__title text text_size_lg">Experience</h2>
+      <div class="box">
+        <h3 class="text text_case_upper">Ramotion</h3>
+        <p class="text">
+          I have developed projects using React, Vue, Svelte, and Lit (Web
+          Components), with the most experience in React and TypeScript. I
+          created a design system template and UI Kit that works with global and
+          local tokens, supports container queries, meets WCAG criteria, and is
+          integrated into Storybook. I have experience training employees from
+          the testing and design departments, as well as implementing level A
+          and AA accessibility criteria for the testing team. I place a strong
+          emphasis on ensuring web accessibility
+        </p>
+        <time class="text">August 2022 — Present</time>
+      </div>
+      <div class="box">
+        <h3 class="text text_upper_case">53xapps</h3>
+        <p class="text">
+          I completely redesigned the UI Kit library for automating business
+          processes at Norilsk Nickel using Vue.js. Additionally, I implemented
+          several projects on WordPress with custom templates, Gulp, and
+          Advanced Custom Fields (ACF), including support for multilingual
+          functionality
+        </p>
+        <time class="text">May 2021 — July 2022</time>
+      </div>
+      <div class="box">
+        <h3 class="text text_case_upper">Ichien</h3>
+        <p class="text">
+          I developed several versions of an online jewelry store. I worked with
+          various platforms, including Bitrix, a custom PHP template, and Tilda
+          with the integration of my own scripts. The main focus was on working
+          with clean HTML, CSS, and JavaScript
+        </p>
+        <time class="text">February 2019 — April 2021</time>
+      </div>
     </main>
-
-    <section class="section">
-      <div class="wrapper">
-        <h2 class="section__title text text_size_extra-large text_type_title">
-          Work experience
-        </h2>
-        <ul class="list">
-          <li class="list__item">
-            <h3 class="text text_size_large text_type_title">Ramotion</h3>
-            <p class="text">
-              I have developed projects using React, Vue, Svelte, and Lit (Web
-              Components), with the most experience in React and TypeScript. I
-              created a design system template and UI Kit that works with global
-              and local tokens, supports container queries, meets WCAG criteria,
-              and is integrated into Storybook. I have experience training
-              employees from the testing and design departments, as well as
-              implementing level A and AA accessibility criteria for the testing
-              team. I place a strong emphasis on ensuring web accessibility
-            </p>
-            <time class="text">August 2022 — Present</time>
-          </li>
-          <li class="list__item">
-            <h3 class="text text_size_large text_type_title">53xapps</h3>
-            <p class="text">
-              I completely redesigned the UI Kit library for automating business
-              processes at Norilsk Nickel using Vue.js. Additionally, I
-              implemented several projects on WordPress with custom templates,
-              Gulp, and Advanced Custom Fields (ACF), including support for
-              multilingual functionality
-            </p>
-            <time class="text">May 2021 — July 2022</time>
-          </li>
-          <li class="list__item">
-            <h3 class="text text_size_large text_type_title">Ichien</h3>
-            <p class="text">
-              I developed several versions of an online jewelry store. I worked
-              with various platforms, including Bitrix, a custom PHP template,
-              and Tilda with the integration of my own scripts. The main focus
-              was on working with clean HTML, CSS, and JavaScript
-            </p>
-            <time class="text">February 2019 — April 2021</time>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="page__footer section">
-      <div class="wrapper">
-        <h2 class="section__title text text_size_extra-large text_type_title">
-          Social networks
-        </h2>
-        <ul class="social">
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://github.com/harut-code"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Github
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://x.com/harut_code"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              X
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://t.me/harut_code"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Telegram
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
   </body>
 </html>

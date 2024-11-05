@@ -48,7 +48,7 @@
 
 @media (min-width: 768px) {
   .page__body {
-    --sidebar-width: 300px;
+    --sidebar-width: 250px;
     --page-columns: var(--sidebar-width) 1fr;
     --page-areas: "header header" "sidebar main";
   }

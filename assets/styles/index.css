@@ -54,12 +54,6 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .page__body {
-    --sidebar-width: 450px;
-  }
-}
-
 .page__header {
   border-bottom: 0.125rem solid currentColor;
 }

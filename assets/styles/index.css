@@ -3,8 +3,10 @@
  */
 
 .page {
-  --font-size-base: 16px;
+  --color-primary: #333333;
+  --color-secondary: #ffffff;
 
+  --font-size-base: 16px;
   font-size: var(--font-size-base);
 }
 
@@ -37,6 +39,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
+  color: var(--color-primary);
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -58,12 +61,12 @@
 }
 
 .page__header {
-  border-bottom: 2px solid currentColor;
+  border-bottom: 0.125rem solid currentColor;
 }
 
 .page__main {
   --page-main-padding: 1em;
-  --page-main-border: 2px solid currentColor;
+  --page-main-border: 0.125rem solid currentColor;
 
   padding-top: var(--page-main-padding);
   border-top: var(--page-main-border);
@@ -83,7 +86,6 @@
 .image {
   max-width: 100%;
   height: auto;
-  border-radius: 3px;
 }
 
 /**
@@ -100,11 +102,15 @@
 }
 
 .text_size_lg {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .text_size_xl {
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+
+.text_size_2xl {
+  font-size: 1.9rem;
 }
 
 /**
@@ -157,6 +163,14 @@
 }
 
 /**
+ * time
+ */
+
+.time {
+  font-size: 0.75rem;
+}
+
+/**
  * link
  */
 
@@ -165,6 +179,15 @@
 }
 
 .link:hover {
+  text-decoration: none;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 0.1em solid currentColor;
   text-decoration: none;
 }
 
@@ -187,7 +210,7 @@
 
     display: flex;
     flex-direction: column;
-    border-right: 2px solid currentColor;
+    border-right: 0.125rem solid currentColor;
   }
 }
 
@@ -199,10 +222,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-}
-
-.main__title {
-  margin-bottom: 0.1em;
 }
 
 /**
@@ -240,6 +259,9 @@
 
 .list__item {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   padding-left: 1em;
 }
 
